@@ -8,7 +8,7 @@ passport.use(
         {
             clientID: process.env.CLIENT_ID,
             clientSecret: process.env.CLIENT_SECRET,
-            callbackURL: "/auth/google/callback",
+            callbackURL: "https://genletter-backend-b8q3.onrender.com/auth/google/callback",
             scope: ["profile", "email"],
         },
         function (accessToken, refreshToken, profile, callback) {
